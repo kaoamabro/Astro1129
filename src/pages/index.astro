@@ -1,0 +1,10 @@
+---
+import Nav from '../components/Nav.astro'
+import Master from '../layouts/Master.astro'
+
+const posts = await Astro.glob('./blog/*.md') 
+---
+<Master>
+	<h1 class="text-3xl font-bold text-sky-800">Astro</h1>
+	{posts.map(post=><div><a href={post.url}>{post.frontmatter.title}</a></div>)}
+</Master>

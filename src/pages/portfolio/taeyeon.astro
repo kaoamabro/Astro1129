@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script is:inline src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section:nth-of-type(1) {
+            width: 100%;
+            height: 100vh;
+            background-color: #fa0;
+
+            /* clip-path: circle(); */
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 15vw),0 100%);
+            /* clip-path: polygon(0 0,100% 0,100% 70%,50% 100%,0 70%); */
+            position: relative;
+            z-index: 10;
+            background-image:url('../../../public/images/taeyeonbackground.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        section:nth-of-type(2) {
+            width: 100%;
+            /* height: 500px; */
+            background-color: rgb(68, 67, 67);
+            margin-top: -15vw;
+            padding-top: 25vw;
+            padding-bottom: 25vw;
+            clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 15vw));
+            position: relative;
+            z-index: 9;
+        }
+        section:nth-of-type(3) {
+            width: 100%;
+            /* background-color: #545; */
+            position: relative;
+            z-index: 8;
+            margin-top: -15vw;
+            padding-top: 20vw;
+            padding-bottom: 20vw;
+            background-image:url('../../../public/images/taeyeonbackground02.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 15vw),0 100%);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            width: min(1200px, 90%);
+            margin-inline: auto;
+        }
+        .col {
+            flex:1 0 0;
+        }
+        .left {
+            width: 50%;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: rgb(255 255 255 / .3);
+        }
+        footer {
+            background-color: #390e69;
+            color: #eee;
+            margin-top: -15vw;
+            padding-top: 20vw;
+            text-align: center;
+            padding-bottom: 5vw;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Taeyeon</span>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+                <a href="/portfolio/taeyeon" class="block py-2 pl-3 pr-4 text-white bg-gray-500 rounded md:bg-transparent md:text-slate-500 md:p-0 dark:text-white md:dark:text-slate-500" aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="/portfolio/taeyeonabout" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-white md:dark:hover:text-slate-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+                <a href="/portfolio/taeyeonalbum" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-white md:dark:hover:text-slate-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Albums</a>
+            </li>
+            <li>
+                <a href="/portfolio/taeyeonalbum" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-white md:dark:hover:text-slate-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Awards</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section></section>
+    <section>
+        <div class="container text-lime-50 flex flex-wrap">
+            <div class="col xl:w-1/3 lg:w-1/2 ">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia, sunt eaque repellat aliquid distinctio molestiae at obcaecati quisquam sed fuga voluptates, ullam quas aspernatur unde voluptatem nulla reiciendis dolore?
+                </p>
+            </div>
+            <div class="col xl:w-1/3 lg:w-1">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia, sunt eaque repellat aliquid distinctio molestiae at obcaecati quisquam sed fuga voluptates, ullam quas aspernatur unde voluptatem nulla reiciendis dolore?
+                </p>
+            </div>
+            <div class="col xl:w-1/3 lg:w-1">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia, sunt eaque repellat aliquid distinctio molestiae at obcaecati quisquam sed fuga voluptates, ullam quas aspernatur unde voluptatem nulla reiciendis dolore?
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container text-zinc-800">
+            <div class="left">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus perferendis vero aliquid assumenda, velit vel harum minus ab unde voluptatibus tenetur numquam asperiores aut architecto rerum inventore corrupti commodi?
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>copyrigh&copy;2023.Design By David</div>
+    </footer>
+
+  
+</body>
+</html>

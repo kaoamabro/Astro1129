@@ -1,0 +1,22 @@
+---
+import Master from "../../layouts/Master.astro";
+import Post from "../../components/Post.astro";
+
+const posts = await Astro.glob('./*.md')
+---
+
+<Master>
+    {
+        posts.map(
+            post=><Post 
+            title={post.frontmatter.title} 
+            pubDate={post.frontmatter.pubDate}
+            url={post.url}
+            />
+
+        )
+    }    
+
+
+</Master>
+
